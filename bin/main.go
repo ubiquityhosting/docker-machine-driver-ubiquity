@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-    plugin.RegisterDriver(ubiquityhosting.NewDriver("", ""))
+    plugin.RegisterDriver(ubiquity.NewDriver("", ""))
 }

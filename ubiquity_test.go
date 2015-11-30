@@ -1,4 +1,4 @@
-package ubiquityhosting
+package ubiquity
 
 import (
 	"testing"
@@ -13,6 +13,8 @@ func TestSetConfigFromFlags(t *testing.T) {
 	checkFlags := &drivers.CheckDriverOptions{
 		FlagsValues: map[string]interface{}{
 			"ubiquity-api-token": "TOKEN",
+            "ubiquity-api-username": "a_cool_guy",
+            "ubiquity-api-client-id": "123",
 		},
 		CreateFlags: driver.GetCreateFlags(),
 	}
