@@ -8,7 +8,7 @@ Install this driver in your PATH and you can create docker hosts on [Ubiquity Ho
 
 Official release versions of the driver include a binary for Linux,
 MacOS and Windows. You can find them on the [GitHub releases
-page](https://github.com/ubiquity/docker-machine-driver-ubiquity/releases).
+page](https://github.com/ubiquityhosting/docker-machine-driver-ubiquity/releases).
 
 Pick the binary you require, download it into a directory on your
 PATH as a file called `docker-machine-driver-ubiquity` and make it
@@ -33,7 +33,7 @@ sudo chmod 755 /usr/local/bin/docker-machine-driver-ubiquity
 ## Obtaining credentials
 
 Login to Ubiquity Motion and navigate to [API Tools](https://motion.ubiquityhosting.com/api).
-Take note of your 'Reseller ID', 'Remote ID', and 'Access Key' - these will be needed later.
+Take note of your `Reseller ID`, `Remote ID`, and `Access Key` - these will be needed later.
 
 ## Using the driver
 
@@ -50,6 +50,7 @@ Check that `docker-machine` can see the Ubiquity Hosting driver by asking for th
 ```
 $ docker-machine create -d ubiquity | more
 Usage: docker-machine create [OPTIONS] [arg...]
+```
 
 ## Create a machine.
 
@@ -66,8 +67,6 @@ Options:
 | --ubiquity-image-id     |   UBIQUITY_IMAGE_ID   |    18   | Ubiquity VM image for VM creation               |           |
 | --ubiquity-zone-id      |    UBIQUITY_ZONE_ID   |    7    | Ubiquity zone location for VM creation          |           |
 
-...
-```
 
 To create a machine you'll need the API credential details you obtained earlier. 
 
