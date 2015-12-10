@@ -1,7 +1,7 @@
 package main
 
 import (
-    "github.com/ubiquityhosting/dm_driver"
+    "github.com/ubiquityhosting/docker-machine-driver-ubiquity"
     "github.com/docker/machine/libmachine/drivers/plugin"
 )
 
